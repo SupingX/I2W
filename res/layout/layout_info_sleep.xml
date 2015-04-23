@@ -1,0 +1,277 @@
+ <RelativeLayout
+     	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_sleep" >
+
+        <ImageView
+            android:id="@+id/sleep_body"
+            android:layout_width="@dimen/circle_bg_top_people_width"
+            android:layout_height="@dimen/circle_bg_top_people_height"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_moon_full" />
+
+        <ImageView
+            android:id="@+id/gray_circle_sleep"
+            android:layout_width="@dimen/circle_new_bg_width"
+            android:layout_height="@dimen/circle_new_bg_height"
+            android:layout_below="@id/sleep_body"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/gray_circle_bg"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/icon_circle" />
+		
+        <!-- 0 步 -->
+      <RelativeLayout
+        android:id="@+id/rl_sleep"
+        android:layout_width="@dimen/circle_new_bg_width"
+        android:layout_height="@dimen/circle_new_bg_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+         >
+      
+            <LinearLayout
+                android:id="@+id/ll_sleep_1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_sleep_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFF0000"
+                    android:textSize="@dimen/step_text_size" 
+                   />
+
+                <TextView
+                    android:id="@+id/tv_setp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="h"
+                    android:paddingLeft="4dp"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" 
+                    />
+                <TextView
+                    android:id="@+id/tv_sleep_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFF0000"
+                    android:textSize="@dimen/step_text_size" 
+                   />
+
+                <TextView
+                    android:id="@+id/tv_setp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:paddingLeft="4dp"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" 
+                    />
+            </LinearLayout>
+			<!-- 横线 -->
+            <View
+                android:id="@+id/line_sleep"
+                android:layout_width="@dimen/pedo_split_line_width"
+                android:layout_height="1px"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ll_sleep_1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="#FFDADADA"
+                 />
+			<!-- 目标15000 -->
+            
+  </RelativeLayout>
+  <!-- info -->
+  <RelativeLayout
+            android:id="@+id/info"
+            android:layout_below="@+id/gray_circle_sleep"
+            android:layout_width="@dimen/pedo_split_line_width"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" >
+            <RelativeLayout
+                android:id="@+id/rl_distance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_alignParentTop="true"
+                >
+
+		      	<ImageView
+		      	    android:id="@+id/img_sleep_deep"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignParentLeft="true"
+		      	    android:layout_alignParentTop="true"
+		      	    android:src="@drawable/icon_deep_sleep" />
+
+		      	<TextView
+		      	    android:id="@+id/tv_deep_unit"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignBaseline="@+id/tv_deep_value"
+		      	    android:layout_alignBottom="@+id/tv_deep_value"
+		      	    android:layout_alignParentRight="true"
+		      	    android:text="分钟" 
+		      	    android:textSize="14sp" />
+
+		      	<TextView
+		      	    android:id="@+id/tv_deep_value"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignBaseline="@+id/tv_distance_name"
+		      	    android:layout_alignBottom="@+id/tv_distance_name"
+		      	    android:layout_marginRight="10dp"
+		      	    android:layout_toLeftOf="@+id/tv_deep_unit"
+		      	    android:gravity="center_vertical"
+		      	    android:text="0" 
+		      	    android:textSize="20sp"/>
+
+		      	<TextView
+		      	    android:id="@+id/tv_distance_name"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_centerVertical="true"
+		      	    android:layout_toRightOf="@+id/img_sleep_deep"
+		      	    android:gravity="center_vertical"
+		      	    android:text="深睡" 
+		      	    android:textSize="18sp"/>
+          
+            </RelativeLayout>
+           	<!-- 横线 -->
+            <View
+                android:id="@+id/line2_sleep"
+                android:layout_width="@dimen/pedo_split_line_width"
+                android:layout_height="1px"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/rl_distance"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:background="#FFDADADA"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/rl_seelp_slow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_below="@id/line2_sleep"
+                android:layout_centerHorizontal="true" >
+
+		      	<ImageView
+		      	    android:id="@+id/img_slow"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignParentLeft="true"
+		      	    android:layout_alignParentTop="true"
+		      	    android:src="@drawable/icon_light_sleep" />
+
+		      	<TextView
+		      	    android:id="@+id/tv_slow_unit"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignParentRight="true"
+		      	    android:layout_centerVertical="true"
+		      	    android:text="分钟" 
+		      	    android:textSize="14sp"/>
+
+		      	<TextView
+		      	    android:id="@+id/tv_slow_value"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_centerVertical="true"
+		      	    android:layout_marginRight="10dp"
+		      	    android:layout_toLeftOf="@+id/tv_slow_unit"
+		      	    android:gravity="center_vertical"
+		      	    android:text="0"
+		      	    android:textSize="20sp" />
+
+		      	<TextView
+		      	    android:id="@+id/tv_time_name"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignBaseline="@+id/tv_slow_value"
+		      	    android:layout_alignBottom="@+id/tv_slow_value"
+		      	    android:layout_toRightOf="@+id/img_slow"
+		      	    android:gravity="center_vertical"
+		      	    android:text="浅睡" 
+		      	    android:textSize="18sp"
+		      	    />
+          
+            </RelativeLayout>
+           	<!-- 横线 -->
+            <View
+                android:id="@+id/line3_sleep"
+                android:layout_width="@dimen/pedo_split_line_width"
+                android:layout_height="1px"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/rl_seelp_slow"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:background="#FFDADADA"
+                 />
+            <RelativeLayout
+                android:id="@+id/rl_energy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_below="@id/line3_sleep"
+                >
+
+		      	<ImageView
+		      	    android:id="@+id/img_awake"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignParentLeft="true"
+		      	    android:layout_alignParentTop="true"
+		      	    android:src="@drawable/icon_awake" />
+
+		      	<TextView
+		      	    android:id="@+id/tv_awak_value"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignBaseline="@+id/tv_awake_name"
+		      	    android:layout_alignBottom="@+id/tv_awake_name"
+		      	    android:layout_marginRight="10dp"
+		      	    android:layout_toLeftOf="@+id/tv_awake_unit"
+		      	    android:gravity="center_vertical"
+		      	    android:text="0"
+		      	    android:textSize="20sp" />
+
+		      	<TextView
+		      	    android:id="@+id/tv_awake_unit"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignParentRight="true"
+		      	    android:layout_centerVertical="true"
+		      	    android:text="次" 
+		      	    android:textSize="14sp"/>
+
+		      	<TextView
+		      	    android:id="@+id/tv_awake_name"
+		      	    android:layout_width="wrap_content"
+		      	    android:layout_height="wrap_content"
+		      	    android:layout_alignBaseline="@+id/tv_awake_unit"
+		      	    android:layout_alignBottom="@+id/tv_awake_unit"
+		      	    android:layout_toRightOf="@+id/img_awake"
+		      	    android:gravity="center_vertical"
+		      	    android:text="清醒" 
+		      	    android:textSize="18sp"/>
+          
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>

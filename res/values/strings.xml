@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">I2W</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_search_i2w">Search I 2 W</string>
+    <string name="more">更多</string>
+    <string name="setting">setting</string>
+
+    <string-array name="main_list">
+        <item name="length">距离</item>
+        <item name="time">时间</item>
+        <item name="karoli">卡路里</item>
+    </string-array>
+
+    <string name="title_activity_leftmenu">LeftmenuActivity</string>
+    <string name="back">返回</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+</resources>

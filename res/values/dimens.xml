@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- views size -->
+    <dimen name="settings_head_title_backgroud_height">48.0dip</dimen>
+    <dimen name="bottom_switch_page_backgroud_height">48.0dip</dimen>
+    <dimen name="settings_head_user_backgroud_height">96.0dip</dimen>
+    <dimen name="main_margin_top">15dp</dimen>
+    <dimen name="circle_bg_width">160dp</dimen>
+    <dimen name="circle_bg_height">160dp</dimen>
+    <dimen name="circle_new_bg_width">220dp</dimen>
+    <dimen name="circle_new_bg_height">220dp</dimen>
+    <dimen name="pedo_split_line_width">180dp</dimen>
+    <dimen name="relativelayout_circle_content_height">195dp</dimen>
+    <dimen name="circle_bg_top_people_width">40dp</dimen>
+    <dimen name="circle_bg_top_people_height">40dp</dimen>
+    <dimen name="circle_bg_top_moon_width">40dp</dimen>
+    <dimen name="circle_bg_top_moon_height">40dp</dimen>
+    <dimen name="linearlayout_margin_top_circle">30dp</dimen>
+    <dimen name="linearlayout_item_margin_top_linearlayout">30dp</dimen>
+    <dimen name="main_content_textview_width">100dp</dimen>
+    <dimen name="data_icon_width">38dp</dimen>
+    <dimen name="data_icon_height">38dp</dimen>
+    <dimen name="back_textview_width">65dp</dimen>
+    <dimen name="left_menu_width">66dp</dimen>
+    <dimen name="left_menu_height">66dp</dimen>
+    <dimen name="right_setting_width">66dp</dimen>
+    <dimen name="right_setting_height">66dp</dimen>
+    <dimen name="share_width">66dp</dimen>
+    <dimen name="share_height">66dp</dimen>
+    <dimen name="goal_margin_top">10dp</dimen>
+    <dimen name="setting_item_height">60dp</dimen>
+    <dimen name="center_content_margin_left">40dp</dimen>
+    <dimen name="center_content_margin_right">40dp</dimen>
+    
+    <dimen name="goal_ll_margin_top">36.0dip</dimen>
+    <dimen name="goal_ll_margin_top1">36.0dip</dimen>
+    <dimen name="goal_goal_prompt_margin_top">50.0dip</dimen>
+    <dimen name="goal_image_width">3.0dip</dimen>
+    <dimen name="goal_image_margin_top1">9.299988dip</dimen>
+    <dimen name="goal_image_margin_bottom1">-10.0dip</dimen>
+    <dimen name="goal_image_margin_left">10.0dip</dimen>
+    <dimen name="goal_image_margin_top">8.0dip</dimen>
+    <dimen name="goal_radiogroup_margin_left">70.0dip</dimen>
+    <dimen name="goal_radiogroup_margin_top">50.0dip</dimen>
+    <dimen name="goal_radiobutton_cal_text_size">22.0dip</dimen>
+    <dimen name="goal_radiobutton_steps_margin_left">45.0dip</dimen>
+    <dimen name="goal_radiobutton_steps_text_size">22.0dip</dimen>
+    <dimen name="goal_cal_steps_text_size">45.0dip</dimen>
+    <dimen name="goal_recom_text_size">15.0dip</dimen>
+    <dimen name="goal_seekbar_margin_left">25.0dip</dimen>
+    <dimen name="goal_seekbar_margin_right">25.0dip</dimen>
+    <dimen name="goal_prompt_margin_left">40.0dip</dimen>
+    <dimen name="goal_prompt_margin_right">30.0dip</dimen>
+    <dimen name="goal_cal_string_margin_left">9.0dip</dimen>
+    <dimen name="goal_content_margin_top">40.0dip</dimen>
+    <dimen name="goal_circle_width">300.0dip</dimen>
+    <dimen name="goal_line_width">150.0dip</dimen>
+    <dimen name="goal_line_height">0.100000024dip</dimen>
+    <dimen name="goal_button_width">150.0dip</dimen>
+    <dimen name="goal_down_width">250.0dip</dimen>
+    <dimen name="marginLeft">18.0dip</dimen>
+    <dimen name="marginRight">10.0dip</dimen>
+    <dimen name="wheelview_width">80.0dip</dimen>
+    
+    <dimen name="virtual_call_incoming_name_margintop">20dip</dimen>
+    <dimen name="virtual_call_slipview_margintop">90dip</dimen>
+    <dimen name="virtual_call_dial_content_margintop">20dip</dimen>
+    <dimen name="virtual_call_btn_hang_up_phone_margintop">16dip</dimen>
+    <dimen name="virtual_call_btn_hang_up_phone_height">40dip</dimen>
+    <dimen name="virtual_call_item_bg_width">90dp</dimen>
+    <dimen name="virtual_call_item_bg_height">60dp</dimen>
+
+    <!-- textview size -->
+    <dimen name="top_title_text_size">20sp</dimen>
+    <dimen name="main_content_text_bigger_size">18sp</dimen>
+    <dimen name="main_content_text_smaller_size">16sp</dimen>
+    <dimen name="back_text_size">18sp</dimen>
+    <dimen name="step_text_size">38sp</dimen>
+    <dimen name="step_description_textsize">16sp</dimen>
+    <dimen name="goal_textsize">18sp</dimen>
+    <dimen name="user_textview_size">18sp</dimen>
+    <dimen name="userinfo_user_bigger_textsize">21sp</dimen>
+    <dimen name="userinfo_user_smaller_textsize">20sp</dimen>
+    <dimen name="goal_circle_step_text_size">32.0sp</dimen>
+    <dimen name="list_item_first_text_size">16.0sp</dimen>
+    <dimen name="list_item_second_text_size">14.0sp</dimen>
+    <dimen name="list_item_title_text_size">14.0sp</dimen>
+    
+    <dimen name="goal_set_pointer_size">12dp</dimen>
+    
+</resources>

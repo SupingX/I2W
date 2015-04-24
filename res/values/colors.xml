@@ -5,4 +5,7 @@
     <color name="focus">#ff00FF00</color>
     <color name="white_color">#FFFFFFFF</color>
     
+    <color name="bgColor">#44dddddd</color>
+     <color name="setting_line_bg">#FFDADADA</color>
+    
 </resources>

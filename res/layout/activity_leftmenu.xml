@@ -1,0 +1,694 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+	<include android:id="@+id/include_left" layout="@layout/title_more_layout" android:layout_alignParentTop="true"/>
+
+	<ScrollView
+	    android:id="@+id/sl_more"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:background="@color/bgColor"
+	    android:layout_below="@+id/include_left" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/remind"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/remind"
+	            android:layout_marginLeft="20dp"
+	            android:paddingBottom="5dp"
+	            android:paddingTop="5dp"
+	            />
+         
+
+	        <RelativeLayout
+	            android:id="@+id/rl_remind_sport"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items"
+                >
+                  <View
+                      android:paddingBottom="5dp"
+	            		 android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_remind_sport"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="运动 提醒" />
+
+	                <TextView
+	                    android:id="@+id/tv_remind_sport_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="07:00-18:00,间隔15分钟" 
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_remind_sport_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/mm_submenu_normal"
+                    android:text="开  " />
+		   		
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_remind_sleep"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_remind_sport"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="睡眠时间" />
+
+	                <TextView
+	                    android:id="@+id/tv_remind_sport_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="22：30-07：00" 
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                <ImageView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mm_submenu_normal"
+                    />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_remind_clock"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_remind_clock"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="闹钟" />
+
+	                <TextView
+	                    android:id="@+id/tv_remind_clock_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="18:00" 
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_remind_clock_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     android:src="@drawable/mm_submenu_normal"
+                     />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_remind_phonecome"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_remind_phonecome"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="来电提醒" />
+
+	                <TextView
+	                    android:id="@+id/tv_remind_phonecome_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="07:00-22:00" 
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_remind_phonecome_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/mm_submenu_normal"
+                    android:text="开  " />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_remind_avoidLose"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_remind_avoidLose"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="防丢提醒" />
+
+	                <TextView
+	                    android:id="@+id/tv_remind_avoidLose_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="手机离开手环超出安全距离，手环震动提醒，防丢功能仅在计步模式下有效 "
+	                    android:lines="2"
+	                    android:maxEms="15"
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+				
+	               <CheckBox
+                    android:id="@+id/remind_avoidLose_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:button="@drawable/selector_switch_checkbox"
+                    android:checked="false"
+                    android:clickable="true" />
+		   	
+	        </RelativeLayout>
+	           <View
+                      android:paddingBottom="5dp"
+	            		 android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	        <TextView
+	            android:id="@+id/remote"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="遥控" 
+	            android:layout_marginLeft="20dp"
+	            android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+	            />
+         
+
+	        <RelativeLayout
+	            android:id="@+id/rl_remote_photo"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items"
+                >
+                  <View
+                      android:paddingBottom="5dp"
+	            		 android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_remote_photo"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="遥控拍照" />
+
+	                <TextView
+	                    android:id="@+id/tv_remind_photo_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="开启遥控拍照，手环短按遥控拍照" 
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+               <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mm_submenu_normal"
+                    />
+		   		
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_remote_come"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_remote_come"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="虚拟来电" />
+
+	                <TextView
+	                    android:id="@+id/tv_remote_come_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="模拟真实来电场景" 
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mm_submenu_normal"
+                    />
+	        </RelativeLayout>
+	        
+	        
+	        <RelativeLayout
+	            android:id="@+id/rl_search"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_search"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="寻找手环" />
+
+	                <TextView
+	                    android:id="@+id/tv_search_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="点击查找手环，手机震动提醒 "
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                  <CheckBox
+                    android:id="@+id/search_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:button="@drawable/selector_switch_checkbox"
+                    android:checked="false"
+                    android:clickable="true" />
+		   	
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_sleeped"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_sleeped"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="手环休眠" />
+
+	                <TextView
+	                    android:id="@+id/tv_sleeped_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="点击可进行手环休眠"
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                  <CheckBox
+                    android:id="@+id/sleeped_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:button="@drawable/selector_switch_checkbox"
+                    android:checked="false"
+                    android:clickable="true" />
+		   	
+	        </RelativeLayout>
+	           <View
+                      android:paddingBottom="5dp"
+	            		 android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	      <TextView
+	            android:id="@+id/other"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="其他" 
+	            android:layout_marginLeft="20dp"
+	            android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+	            />
+	      <RelativeLayout
+	            android:id="@+id/rl_other"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_light_high"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="高亮显示" />
+
+	                <TextView
+	                    android:id="@+id/tv_light_high_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="阳光下可改善手环显示效果，但手环高耗电"
+	                    android:lines="2"
+	                    android:ems="14"
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                  <CheckBox
+                    android:id="@+id/light_high_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:button="@drawable/selector_switch_checkbox"
+                    android:checked="false"
+                    android:clickable="true" />
+		   	
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_round"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items">
+                  <View
+                      android:paddingBottom="5dp"
+	             android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                 android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_round"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="旋转亮屏" />
+
+	                <TextView
+	                    android:id="@+id/tv_sleeped_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="翻转手腕可点亮手环屏幕查看时间"
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+                   <CheckBox
+                    android:id="@+id/round_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:button="@drawable/selector_switch_checkbox"
+                    android:checked="false"
+                    android:clickable="true" />
+		   	
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:id="@+id/rl_help"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+             	style="@style/itemStyle"
+                android:background="@drawable/selector_setting_items"
+                >
+                  <View
+                      android:paddingBottom="5dp"
+	            		 android:paddingTop="5dp"
+                      android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFDADADA"
+                 />
+	            <LinearLayout
+	                android:padding="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:orientation="vertical" 
+	                >
+
+	                <TextView
+	                    android:id="@+id/tv_help"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="帮助" />
+
+	                <TextView
+	                    android:id="@+id/tv_remind_photo_info"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="" 
+	                    android:textColor="#FFCACACA"
+	                    android:textSize="12sp"
+	                    />
+
+	            </LinearLayout>
+
+               <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mm_submenu_normal"
+                    />
+		   		
+	        </RelativeLayout>
+	      
+	    </LinearLayout>
+	</ScrollView>
+	
+</RelativeLayout>

@@ -22,13 +22,18 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/img_back"
-        android:text="@string/back" />
+        android:text="@string/back"
+        android:textSize="@dimen/back_text_size"
+        android:textColor="@color/white_color"
+         />
 
     <TextView
         android:id="@+id/tv_more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/top_title_text_size"
         android:text="@string/more" />
 
 </RelativeLayout>

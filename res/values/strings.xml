@@ -5,7 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="btn_search_i2w">Search I 2 W</string>
     <string name="more">更多</string>
-    <string name="setting">setting</string>
+    <string name="sets">设置</string>
 
     <string-array name="main_list">
         <item name="length">距离</item>
@@ -16,5 +16,10 @@
     <string name="title_activity_leftmenu">LeftmenuActivity</string>
     <string name="back">返回</string>
     <string name="title_activity_setting">SettingActivity</string>
+    <string name="remind">智能提醒</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_goal">GoalActivity</string>
+    <string name="title_activity_about_app">AboutAppActivity</string>
+    <string name="title_activity_connect_bluetooth">ConnectBluetoothActivity</string>
 
 </resources>

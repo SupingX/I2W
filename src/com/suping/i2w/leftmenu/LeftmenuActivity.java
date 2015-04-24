@@ -18,7 +18,7 @@ public class LeftmenuActivity extends Activity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.leftmenu_layout);
+		setContentView(R.layout.activity_leftmenu);
 		initWedgits();
 		registerListener();
 	}
@@ -30,6 +30,7 @@ public class LeftmenuActivity extends Activity implements OnClickListener{
 	
 	private void registerListener(){
 		backImg.setOnClickListener(this);
+		
 	}
 
 	@Override

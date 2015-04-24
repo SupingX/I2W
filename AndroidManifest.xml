@@ -28,8 +28,24 @@
             android:label="@string/title_activity_leftmenu" >
         </activity>
         <activity
-            android:name="com.suping.i2w.SettingActivity"
+            android:name="com.suping.i2w.setting.SettingActivity"
             android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.suping.i2w.setting.UserInfoActivity"
+            android:label="@string/title_activity_user_info" >
+        </activity>
+        <activity
+            android:name="com.suping.i2w.setting.GoalActivity"
+            android:label="@string/title_activity_goal" >
+        </activity>
+        <activity
+            android:name="com.suping.i2w.setting.AboutAppActivity"
+            android:label="@string/title_activity_about_app" >
+        </activity>
+        <activity
+            android:name="com.suping.i2w.setting.ConnectBluetoothActivity"
+            android:label="@string/title_activity_connect_bluetooth" >
         </activity>
     </application>
 

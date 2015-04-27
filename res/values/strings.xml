@@ -21,5 +21,7 @@
     <string name="title_activity_goal">GoalActivity</string>
     <string name="title_activity_about_app">AboutAppActivity</string>
     <string name="title_activity_connect_bluetooth">ConnectBluetoothActivity</string>
+    <string name="title_activity_setting_height">SettingHeightActivity</string>
+    <string name="title_activity_setting_birthday">SettingBirthdayActivity</string>
 
 </resources>

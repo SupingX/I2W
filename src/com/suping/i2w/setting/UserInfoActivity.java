@@ -23,6 +23,7 @@ import com.suping.i2w.util.SysUtil;
 
 public class UserInfoActivity extends Activity implements OnClickListener {
 	private TextView tv_back;
+	private TextView tv_title;
 	private TextView tv_sex;
 	private TextView tv_height;
 	private TextView tv_weight;
@@ -44,6 +45,7 @@ public class UserInfoActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_user_info);
 		initViews();
 		setOnClick();
+		tv_title.setText("个人信息");
 	}
 	
 	@Override
@@ -80,12 +82,12 @@ public class UserInfoActivity extends Activity implements OnClickListener {
 		tv_height = (TextView) findViewById(R.id.tv_height);
 		tv_birthday = (TextView) findViewById(R.id.tv_birthday);
 		tv_height_unit = (TextView) findViewById(R.id.tv_height_unit);
+		tv_title = (TextView) findViewById(R.id.tv_title);
 		box_men = (CheckBox) findViewById(R.id.men_check);
 		box_women = (CheckBox) findViewById(R.id.women_check);
 		lin_height = (LinearLayout) findViewById(R.id.height);
 		lin_weight = (LinearLayout) findViewById(R.id.weight);
 		lin_birthday = (LinearLayout) findViewById(R.id.birthday);
-		
 	}
 	
 	private void setOnClick() {

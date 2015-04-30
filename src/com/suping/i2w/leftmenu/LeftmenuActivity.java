@@ -1,42 +1,43 @@
 package com.suping.i2w.leftmenu;
 
-import com.suping.i2w.Main;
-import com.suping.i2w.R;
-import com.suping.i2w.R.layout;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.suping.i2w.Main;
+import com.suping.i2w.R;
 
 public class LeftmenuActivity extends Activity implements OnClickListener{
-	private ImageView backImg;
+	private TextView tv_back;
+	private TextView tv_title;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_leftmenu);
 		initWedgits();
 		registerListener();
+		tv_title.setText("更多");
 	}
 	
 	private void initWedgits(){
-		backImg = (ImageView) findViewById(R.id.img_back);
+		tv_back = (TextView) findViewById(R.id.tv_back);
+		tv_title = (TextView) findViewById(R.id.tv_title);
 		
 	}
 	
 	private void registerListener(){
-		backImg.setOnClickListener(this);
+		tv_back.setOnClickListener(this);
 		
 	}
 
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.img_back:
+		case R.id.tv_back:
 			startActivity(new Intent(LeftmenuActivity.this, Main.class));
 			// TODO Auto-generated method stub
 			LeftmenuActivity.this.finish();

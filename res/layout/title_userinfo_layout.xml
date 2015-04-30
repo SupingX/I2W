@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/top_height"
     android:background="@drawable/top_title_bg"
     tools:context="${packageName}.${activityClass}" >
 
@@ -27,13 +27,12 @@
         android:textColor="@color/white_color" 
         android:drawableLeft="@drawable/selector_back"
         style="@style/backStyle"
+        android:textSize="@dimen/top_back_text_size"
         />
-    
-
     <TextView
           android:textColor="@color/white_color" 
           android:textSize="@dimen/top_title_text_size"
-        android:id="@+id/tv_more"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

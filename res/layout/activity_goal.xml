@@ -2,11 +2,209 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${packageName}.${activityClass}" >
+    tools:context="${packageName}.${activityClass}" xmlns:app="http://schemas.android.com/apk/res/com.suping.i2w">
 
-    <TextView
+    <include
+        android:id="@+id/goal_top"
+        layout="@layout/top_layout" />
+
+    <RelativeLayout
+        android:id="@+id/gl_cirle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goal_top"
+        android:layout_marginTop="30dp" >
+        
+	<com.suping.i2w.view.CircleSeekBar
+	    android:layout_centerInParent="true"
+        android:id="@+id/circle_seekbar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+    	app:progress_background="#dddddd"
+        app:progress_max="20000"
+        app:show_progress_text="false"
+        app:progress_text_color="#00ff00"
+        app:progress_text_size="10dp"
+        app:progress_text_stroke_width="1dp"
+        app:progress_width="3dp"
+       	android:thumb="@drawable/selector_scrubber"
+        />	    
+        <LinearLayout
+            android:id="@+id/lin_cirle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp" >
+
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/step_text_size"
+                />
+
+            <TextView
+                android:id="@+id/steps_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_cirle"
+            style="@style/line_1px"
+            android:layout_below="@id/lin_cirle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/lin_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_cirle"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/kael"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/settings_goal_text_color"
+                />
+            <TextView
+                android:id="@+id/kael_unim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="千卡"
+                />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="或" />
+
+            <TextView
+                android:id="@+id/instance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textColor="@color/settings_goal_text_color"
+               />
+            <TextView
+                android:id="@+id/kael_unim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="千米"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_advice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@id/gl_cirle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/advice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="专家建议:" />
+
+        <TextView
+            android:id="@+id/advice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="每天运动10000步是积极健康的生活方式。" />
+
+        <View
+            android:id="@+id/line2"
+            style="@style/line_fen"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/lin_advice"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_few"
+                style="@style/img_format"
+                android:src="@drawable/selector_goal_few" />
+
+            <TextView
+                android:id="@+id/tv_few"
+                style="@style/zi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="少量运动者" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_middle"
+                style="@style/img_format"
+                android:src="@drawable/selector_goal_middle" />
+
+            <TextView
+                android:id="@+id/tv_middle"
+                style="@style/zi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="适量运动者" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_high"
+                style="@style/img_format"
+                android:src="@drawable/selector_goal_high" />
+
+            <TextView
+                android:id="@+id/tv_high"
+                style="@style/zi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="高强度运动者" />
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

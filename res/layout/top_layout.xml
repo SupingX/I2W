@@ -1,11 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/top_height"
     android:background="@drawable/top_title_bg"
     tools:context="${packageName}.${activityClass}" >
 
-   <!--  <ImageView
+    <!--
+         <ImageView
 		android:contentDescription="@string/app_name"
         android:id="@+id/img_back"
         android:layout_width="wrap_content"
@@ -14,29 +15,29 @@
         android:layout_centerVertical="true"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/selector_back" /> -->
-	<!-- 按返回字也能触发后退 -->
+        android:src="@drawable/selector_back" />
+    -->
+    <!-- 按返回字也能触发后退 -->
+
     <TextView
         android:id="@+id/tv_back"
+        style="@style/backStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:gravity="center_vertical"
-        android:text="@string/back" 
         android:drawableLeft="@drawable/selector_back"
-         android:textColor="@color/white_color" 
-        style="@style/backStyle"
-        />
-    
+        android:gravity="center_vertical"
+        android:text="@string/back"
+        android:textColor="@color/white_color" />
 
     <TextView
-        android:textSize="@dimen/top_title_text_size"
-         android:textColor="@color/white_color" 
-        android:id="@+id/tv_infos"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="个人信息" />
+        android:text="标题"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/top_title_text_size" />
 
 </RelativeLayout>

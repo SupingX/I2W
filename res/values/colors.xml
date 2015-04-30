@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources >
-    
+<resources>
+
     <color name="btn_search_i2w_bg">#00FFFFFF</color>
     <color name="focus">#ff00FF00</color>
     <color name="white_color">#FFFFFFFF</color>
-    
     <color name="bgColor">#44dddddd</color>
-     <color name="setting_line_bg">#FFDADADA</color>
-    
+    <color name="setting_line_bg">#FFDADADA</color>
+    <color name="settings_goal_selected_text_color">#575FAA</color>
+    <color name="settings_goal_text_color">#ff888888</color>
+    <color name="km_karl">#ffe3e3e3</color>
+
 </resources>

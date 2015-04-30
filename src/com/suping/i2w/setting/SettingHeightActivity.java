@@ -2,12 +2,12 @@ package com.suping.i2w.setting;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
+import android.text.InputType;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.NumberPicker;
 import android.widget.NumberPicker.Formatter;
@@ -88,18 +88,30 @@ public class SettingHeightActivity extends Activity implements OnClickListener{
 		units = new String[]{"cm","ft"};
 		np_height.setMaxValue(maxHeightCm);
 		np_height.setMinValue(minHeightCm);
-		np_height.setFocusableInTouchMode(false);
-		np_height.setFocusable(false);
+		
+		
+		((EditText)(np_height.getChildAt(0))).setFocusable(false);
+		((EditText)(np_height.getChildAt(0))).setFocusableInTouchMode(false);
+		((EditText)(np_height.getChildAt(0))).setInputType(InputType.TYPE_NULL);
 		
 		np_unit.setDisplayedValues(units);
 		np_unit.setMaxValue(units.length);
 		np_unit.setMinValue(1);
+		((EditText)(np_unit.getChildAt(0))).setFocusable(false);
+		((EditText)(np_unit.getChildAt(0))).setFocusableInTouchMode(false);
+		((EditText)(np_unit.getChildAt(0))).setInputType(InputType.TYPE_NULL);
 		
 		np_feet.setMaxValue(FtCmConvertUtil.getMaxHeightFoot(minHeightCm,maxHeightCm));
 		np_feet.setMinValue(FtCmConvertUtil.getMinHeightFoot(minHeightCm, maxHeightCm));
+		((EditText)(np_feet.getChildAt(0))).setFocusable(false);
+		((EditText)(np_feet.getChildAt(0))).setFocusableInTouchMode(false);
+		((EditText)(np_feet.getChildAt(0))).setInputType(InputType.TYPE_NULL);
 		
 		np_inch.setMaxValue(FtCmConvertUtil.getMaxHeightInch(minHeightCm, maxHeightCm));
 		np_inch.setMinValue(FtCmConvertUtil.getMinHeightInch(minHeightCm, maxHeightCm));
+		((EditText)(np_inch.getChildAt(0))).setFocusable(false);
+		((EditText)(np_inch.getChildAt(0))).setFocusableInTouchMode(false);
+		((EditText)(np_inch.getChildAt(0))).setInputType(InputType.TYPE_NULL);
 		
 	}
 

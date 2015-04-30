@@ -4,9 +4,39 @@
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        android:gravity="right"
+        android:id="@+id/ll"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scan" />
+        <TextView
+            android:id="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|" />
+        <TextView
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ble_devices_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll" />
 
 </RelativeLayout>

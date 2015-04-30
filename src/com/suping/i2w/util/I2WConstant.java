@@ -6,4 +6,5 @@ public class I2WConstant {
 	public static final String HEIGHT_UNIT = "HEIGHT_UNIT";
 	public static final String HEIGHT_FEET = "HEIGHT_FEET";
 	public static final String HEIGHT_INCH = "HEIGHT_INCH";
+	public static final String GOAL = "GOAL";
 }

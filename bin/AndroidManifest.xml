@@ -8,7 +8,11 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 在application加入全局Service -->
     <application
+        android:name="com.suping.i2w.bluetooth.BleApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -19,15 +23,16 @@
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.suping.i2w.leftmenu.LeftmenuActivity"
-            android:label="@string/title_activity_leftmenu" 
-               android:configChanges="locale|layoutDirection"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_activity_leftmenu"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.suping.i2w.setting.SettingActivity"
@@ -35,50 +40,47 @@
         </activity>
         <activity
             android:name="com.suping.i2w.setting.UserInfoActivity"
-            android:label="@string/title_activity_user_info" 
-               android:configChanges="locale|layoutDirection"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_activity_user_info"
             android:launchMode="standard"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.suping.i2w.setting.GoalActivity"
-            android:label="@string/title_activity_goal" 
-               android:configChanges="locale|layoutDirection"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_activity_goal"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.suping.i2w.setting.AboutAppActivity"
-            android:label="@string/title_activity_about_app" 
-               android:configChanges="locale|layoutDirection"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_activity_about_app"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.suping.i2w.setting.ConnectBluetoothActivity"
-            android:label="@string/title_activity_connect_bluetooth" 
-               android:configChanges="locale|layoutDirection"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/title_activity_connect_bluetooth"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.suping.i2w.setting.SettingHeightActivity"
-            android:label="@string/title_activity_setting_height"
             android:configChanges="locale|layoutDirection"
+            android:label="@string/title_activity_setting_height"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/DialogActivity"
-        	>
+            android:theme="@style/DialogActivity" >
         </activity>
         <activity
             android:name="com.suping.i2w.setting.SettingBirthdayActivity"
-            android:label="@string/title_activity_setting_birthday" 
             android:configChanges="locale|layoutDirection"
+            android:label="@string/title_activity_setting_birthday"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/DialogActivity"
-            >
+            android:theme="@style/DialogActivity" >
         </activity>
     </application>
 

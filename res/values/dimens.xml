@@ -71,7 +71,6 @@
     <dimen name="virtual_call_item_bg_height">60dp</dimen>
 
     <!-- textview size -->
-    <dimen name="top_title_text_size">20sp</dimen>
     <dimen name="main_content_text_bigger_size">18sp</dimen>
     <dimen name="main_content_text_smaller_size">16sp</dimen>
     <dimen name="back_text_size">18sp</dimen>
@@ -87,5 +86,13 @@
     <dimen name="list_item_title_text_size">14.0sp</dimen>
     
     <dimen name="goal_set_pointer_size">12dp</dimen>
+    
+    
+    <!-- mine -->
+    <dimen name="top_height">50dp</dimen>
+    <dimen name="top_title_text_size">20sp</dimen>
+    <dimen name="top_back_text_size">18dp</dimen>
+    
+    
     
 </resources>

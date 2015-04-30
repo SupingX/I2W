@@ -15,6 +15,7 @@ import com.suping.i2w.R;
 public class SettingActivity extends Activity implements OnClickListener {
 	
 	private TextView tv_back;
+	private TextView tv_title;
 	private RelativeLayout rl_user_info;
 	private RelativeLayout rl_user_goal;
 	private RelativeLayout rl_user_connect;
@@ -27,6 +28,7 @@ public class SettingActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_setting);
 		loadViews();
 		setClick();
+		tv_title.setText("设置");
 	}
 	
 	private void loadViews(){
@@ -35,6 +37,7 @@ public class SettingActivity extends Activity implements OnClickListener {
 		rl_user_goal = (RelativeLayout) findViewById(R.id.rl_user_goal);
 		rl_user_connect = (RelativeLayout) findViewById(R.id.rl_user_connect);
 		rl_user_about = (RelativeLayout) findViewById(R.id.rl_user_about);
+		tv_title = (TextView) findViewById(R.id.tv_title);
 		
 		
 	}

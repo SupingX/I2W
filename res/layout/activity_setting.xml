@@ -6,7 +6,7 @@
 
     <include
         android:id="@+id/include_head"
-        layout="@layout/title_setting_layout" />
+        layout="@layout/top_layout" />
 
     <LinearLayout
         android:layout_width="wrap_content"

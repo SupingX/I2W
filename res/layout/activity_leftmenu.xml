@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
-	<include android:id="@+id/include_left" layout="@layout/title_more_layout" android:layout_alignParentTop="true"/>
+	<include android:id="@+id/include_left" layout="@layout/top_layout" android:layout_alignParentTop="true"/>
 
 	<ScrollView
 	    android:id="@+id/sl_more"
